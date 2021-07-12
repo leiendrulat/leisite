@@ -20,7 +20,7 @@ func main() {
 	// Middleware
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
-
+	e.Static("/static", "static")
 	// Route => handler
 	router.Router(e)
 

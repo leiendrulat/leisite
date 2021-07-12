@@ -1,12 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    HI
-</body>
-</html>
+{{template "header"}}
+    <img src="static/img/LEI.jpg" alt="">
+    <br>
+    <br>
+    <h1>LeiArkitectz</h1>
+    <br>
+<p></p>
+<h2>HTML Forms</h2>
+
+<form action="/form" method="POST">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email"><br>
+  <label for="password">Password:</label><br>
+  <input type="text" id="password" name="password">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+{{template "footer"}}
